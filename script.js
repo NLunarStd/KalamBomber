@@ -256,7 +256,7 @@ function checkWinCondition() {
         stopTimer(); // หยุด Timer ชั่วคราว
         stage++;
         
-        const nextMines = Math.min(150 + (stage - 1) * 10, 300);
+        const nextMines = Math.min(120 + (stage - 1) * 10, 300);
         alert(`Stage ${stage - 1} Cleared! Preparing for Stage ${stage} with ${nextMines} mines!`);
         
         initializeGame(); 
@@ -319,7 +319,7 @@ function gameOver(hitRow, hitCol, timedOut = false) {
  */
 function initializeGame() {
     // 1. กำหนดจำนวนระเบิดตาม Difficulty Progression
-    currentMines = Math.min(150 + (stage - 1) * 10, 300);
+    currentMines = Math.min(120 + (stage - 1) * 10, 300);
     minesLeft = currentMines;
     
     // 2. สร้างโครงสร้างข้อมูลกระดาน (board) และมาสก์ (mask)
@@ -367,4 +367,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // ป้องกันเมนูบริบทของเบราว์เซอร์เมื่อคลิกขวาในพื้นที่กระดาน
     boardGrid.addEventListener('contextmenu', (e) => e.preventDefault()); 
     initializeGame();
+
 });
