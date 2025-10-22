@@ -1,0 +1,49 @@
+#board-grid {
+    /* กำหนดให้เป็น Grid เพื่อสร้างกระดาน 30x20 */
+    display: grid;
+    /* 30 คอลัมน์ (ปรับขนาดตามที่คุณต้องการ) */
+    grid-template-columns: repeat(30, 20px); 
+    /* 20 แถว */
+    grid-template-rows: repeat(20, 20px); 
+    border: 3px solid #333;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc; /* Concealed */
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell.opened {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.cell.flagged {
+    background-color: yellow;
+    /* อาจใช้ Emoji หรือไอคอนธงแทนข้อความ */
+    content: '🚩'; 
+}
+
+/* สีสำหรับตัวเลขในช่องที่เปิดแล้ว */
+.cell.num-1 { color: blue; }
+.cell.num-2 { color: green; }
+.cell.num-3 { color: red; }
+/* ... กำหนดสีสำหรับตัวเลขอื่นๆ */
+
+.cell.mine {
+    background-color: red;
+    content: '💣';
+}
+
+.hidden {
+    display: none;
+}
+/* เพิ่ม style สำหรับ #status-panel และ #game-over-screen */
