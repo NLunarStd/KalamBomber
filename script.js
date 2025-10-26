@@ -5,7 +5,7 @@
 const ROWS = 20;
 const COLS = 30;
 const INITIAL_TIME = 10; // เวลาเริ่มต้น (วินาที)
-const TIME_BONUS = 20;  // เวลาที่เพิ่มขึ้นเมื่อเปิดช่องสำเร็จ (วินาที)
+const TIME_BONUS = 10;  // เวลาที่เพิ่มขึ้นเมื่อเปิดช่องสำเร็จ (วินาที)
 
 let currentMines;
 let board; // เก็บสถานะของกระดาน (มีระเบิด, ตัวเลข)
@@ -369,3 +369,4 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeGame();
 
 });
+
