@@ -2,9 +2,9 @@
     /* กำหนดให้เป็น Grid เพื่อสร้างกระดาน 30x20 */
     display: grid;
     /* 30 คอลัมน์ (ปรับขนาดตามที่คุณต้องการ) */
-    grid-template-columns: repeat(30, 20px); 
+    grid-template-columns: repeat(30, 35px); 
     /* 20 แถว */
-    grid-template-rows: repeat(20, 20px); 
+    grid-template-rows: repeat(20, 35px); 
     border: 3px solid #333;
     margin: 20px auto;
 }
@@ -48,3 +48,4 @@
 }
 
 /* เพิ่ม style สำหรับ #status-panel และ #game-over-screen */
+
