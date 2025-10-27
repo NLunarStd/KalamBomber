@@ -13,9 +13,9 @@
     width: 35px;
     height: 35px;
     background-color: #ccc; /* Concealed */
-    border: 1px solid #aaa;
+    border: 3px solid #aaa;
     text-align: center;
-    line-height: 20px;
+    line-height: 35px;
     font-weight: bold;
     cursor: pointer;
     user-select: none;
@@ -48,4 +48,5 @@
 }
 
 /* เพิ่ม style สำหรับ #status-panel และ #game-over-screen */
+
 
