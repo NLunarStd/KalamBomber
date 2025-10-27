@@ -10,8 +10,8 @@
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background-color: #ccc; /* Concealed */
     border: 1px solid #aaa;
     text-align: center;
@@ -46,4 +46,5 @@
 .hidden {
     display: none;
 }
+
 /* เพิ่ม style สำหรับ #status-panel และ #game-over-screen */
