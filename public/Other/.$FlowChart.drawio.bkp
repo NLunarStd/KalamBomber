@@ -1,0 +1,166 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="94v41u5v_855GIdqyiVN">
+    <mxGraphModel dx="1083" dy="402" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-1" target="yW-LtpTjo4jy6HEaoLd5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="349" y="150" width="142" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-2" target="yW-LtpTjo4jy6HEaoLd5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-2" value="Content loaded" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="255.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-4" target="yW-LtpTjo4jy6HEaoLd5-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-4" value="initializeGame()" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="395.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-6" target="yW-LtpTjo4jy6HEaoLd5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-6" value="initializeGame()" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="178" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-7" target="yW-LtpTjo4jy6HEaoLd5-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-7" value="คำณวนจำนวนระเบิด = 150+(stage-1)*10; where max = 300" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="318" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-9" target="yW-LtpTjo4jy6HEaoLd5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-9" value="สร้าง array 2 ชั้น ชั้นของ Board กับชั้นที่ปิดด้านบน" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="458" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-11" target="yW-LtpTjo4jy6HEaoLd5-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-11" value="layer board กำหนดให้ทุกค่าเป็น 0" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="598" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-13" target="yW-LtpTjo4jy6HEaoLd5-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-13" value="layer ชั้นบน กำหนดให้ทุกค่าเป็น concealed" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="738" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-15" target="yW-LtpTjo4jy6HEaoLd5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-15" value="clear กระดาน และตัวแปรต่างๆ เผื่อกรณีเปลี่ยนด่านมา แล้วติดค่าเดิม" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="878" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-17" target="yW-LtpTjo4jy6HEaoLd5-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-17" value="Update UI ให้ตรงกับด่านปัจจุบัน" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="1018" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-19" target="yW-LtpTjo4jy6HEaoLd5-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-19" value="สร้าง div เป็นช่องสำหรับกดเป็น child ของ board" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="1158" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-21" target="yW-LtpTjo4jy6HEaoLd5-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-21" value="วนลูปให้ครบ 30 x 20 ตามขนาดของกระดาน" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="1298" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-23" value="ใส่ eventlistener ที่ต้องใช้กับแต่ละอันเช่น click หรือ flag" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="873" y="1438" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-25" target="yW-LtpTjo4jy6HEaoLd5-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-25" value="รอรับ input" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="535.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-27" target="yW-LtpTjo4jy6HEaoLd5-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-27" target="yW-LtpTjo4jy6HEaoLd5-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-27" value="click LMB?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="665.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-29" target="yW-LtpTjo4jy6HEaoLd5-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-29" value="Click RMB?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="825.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-31" value="LeftClicked()" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="675.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-33" target="yW-LtpTjo4jy6HEaoLd5-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-33" value="RightClicked()" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="835.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-35" target="yW-LtpTjo4jy6HEaoLd5-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-35" value="เช็คตำแหน่งตาม grid ที่ทำการกด RMB" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="975.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-39" target="yW-LtpTjo4jy6HEaoLd5-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-39" target="yW-LtpTjo4jy6HEaoLd5-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-39" value="isOpened?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1105.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-41" target="yW-LtpTjo4jy6HEaoLd5-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-41" target="yW-LtpTjo4jy6HEaoLd5-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-41" value="isConcealed?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1265.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-43" target="yW-LtpTjo4jy6HEaoLd5-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-43" value="isFlagged?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1425.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-45" value="return ไม่ต้องทำอะไร" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1115.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-47" target="yW-LtpTjo4jy6HEaoLd5-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-47" value="ทำการ flag ช่องนั้นใน layer ชั้นบน" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1275.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yW-LtpTjo4jy6HEaoLd5-49" target="yW-LtpTjo4jy6HEaoLd5-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-49" value="ทำการเอา flag ช่องนั้นใน layer ชั้นบนออก" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1435.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-51" value="ลดจำนวน ระเบิด ที่เหลืออยู่ 1 ลูก" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="1275.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yW-LtpTjo4jy6HEaoLd5-53" value="เพิ่มจำนวน ระเบิด ที่เหลืออยู่ 1 ลูก" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="1435.5" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

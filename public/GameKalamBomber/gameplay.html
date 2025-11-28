@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalam Bomber</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     
+    <div id="game-container">
+        <h1>Kalam Bomber</h1>
+        <div id="status-panel">
+            <span>Stage: <span id="stage-display">1</span></span>
+            <span>Mines Left: <span id="mines-left-display">150</span></span>
+            <span>Score: <span id="score-display">0</span></span>
+            <span>Time: <span id="timer-display">30s</span></span> 
+    </div> 
+        
+        <div id="board-grid">
+            </div>
+
+        <div id="game-over-screen" class="hidden">
+        <h2>GAME OVER!</h2>
+        <p>Your Final Score: <span id="final-score">0</span></p>
+        
+        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">
+            <button onclick="window.location.reload()" style="padding: 10px 20px; cursor: pointer;">
+                🔄 Play Again
+            </button>
+            
+            <button onclick="window.location.href='../html/leaderboard.html'" style="padding: 10px 20px; cursor: pointer; background-color: #333; color: white; border: none;">
+                🏆 Leaderboard
+            </button>
+            
+            <button onclick="window.location.href='../html/mainmenu.html'" style="padding: 10px 20px; cursor: pointer; background-color: #666; color: white; border: none;">
+                🏠 Menu
+            </button>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - KaLam Bomber</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="../js/leaderboard.js"></script>
+
+    
+</head>
+<body>
+
+    <div class="leaderboard-container">
+        <h1>Leaderboard</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Rating</th>
+                    <th style="width: 30%;">Username</th>
+                    <th style="width: 20%;">Score</th>
+                    <th style="width: 20%;">Like</th>
+                    <th style="width: 20%;">Comment</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <tr><td colspan="5">Loading data...</td></tr>
+            </tbody>
+        </table>
+
+        <div id="user-rank-display" class="user-rank-row">
+            <span>...</span>
+            <span>...</span>
+            <span>...</span>
+            <span>...</span>
+            <span>...</span>
+        </div>
+
+        <button onclick="window.location.href='mainmenu.html'" class="main-button">
+            Back to Menu
+        </button>
+    </div>
+
+    <div id="comment-overlay">
+        <div class="comment-box">
+            <div class="comment-header">
+                <h3 style="margin:0;">Comments</h3>
+                <span class="close-btn" onclick="closeOverlay()">&times;</span>
+            </div>
+            
+            <div id="chat-log">
+                </div>
+
+            <div class="input-area">
+                <input type="text" id="comment-input" placeholder="Enter your comment..." autocomplete="off">
+                <button class="send-btn" onclick="sendComment()">➤</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

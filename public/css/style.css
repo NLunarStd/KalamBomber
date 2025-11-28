@@ -1,0 +1,350 @@
+/* ส่วนเกม */
+#board-grid {
+    /* กำหนดให้เป็น Grid เพื่อสร้างกระดาน 30x20 */
+    display: grid;
+    /* 30 คอลัมน์ (ปรับขนาดตามที่คุณต้องการ) */
+    grid-template-columns: repeat(30, 35px); 
+    /* 20 แถว */
+    grid-template-rows: repeat(20, 35px); 
+    border: 3px solid #333;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    background-color: #ccc; /* Concealed */
+    border:3px solid #aaa;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.cell.opened {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.cell.flagged {
+    background-color: yellow;
+    /* อาจใช้ Emoji หรือไอคอนธงแทนข้อความ */
+    content: '🚩'; 
+}
+
+/* สีสำหรับตัวเลขในช่องที่เปิดแล้ว */
+.cell.num-1 { color: blue; }
+.cell.num-2 { color: green; }
+.cell.num-3 { color: red; }
+/* ... กำหนดสีสำหรับตัวเลขอื่นๆ */
+
+.cell.mine {
+    background-color: red;
+    content: '💣';
+}
+
+.hidden {
+    display: none;
+}
+/* เพิ่ม style สำหรับ #status-panel และ #game-over-screen */
+#status-panel {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: space-around; /* กระจายข้อมูลออกจากกัน */
+    align-items: center;
+    width: 606px; /* 30 คอลัมน์ x 20px + (1px border x 30 x 2) = 660px. ปรับให้เข้ากับความกว้างกระดาน */
+    margin: 10px auto;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid #555;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+#status-panel span {
+    margin: 0 10px; /* เพิ่มระยะห่างระหว่างรายการ */
+}
+
+#game-over-screen {
+    position: absolute; /* ลอยอยู่เหนือกระดาน */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* จัดกึ่งกลางทั้งแนวตั้งและแนวนอน */
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 5px solid #cc0000;
+    padding: 40px;
+    text-align: center;
+    z-index: 10; /* ให้แน่ใจว่าอยู่ด้านบนสุด */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+#game-over-screen h2 {
+    color: #cc0000;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#game-over-screen button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* ส่วนของ splash screnn */
+
+/* ส่วนของ login */
+
+.errorDisplayText{
+    color: #e74c3c;
+    font-weight: bold;
+}
+.successDisplayText{
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* ส่วนของ register */
+
+
+/* ส่วนของ mainmenu */
+
+
+/* ส่วนของ leaderboard */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* สีพื้นหลัง */
+}
+
+.leaderboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 { margin-bottom: 20px; color: #333; }
+
+/* ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0; /* ติดกับ User Row */
+}
+
+thead {
+    background-color: #222;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th { font-weight: 600; font-size: 1.1em; }
+td { font-size: 1.05em; color: #333; }
+
+
+.action-btn:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+}
+.action-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    transition: transform 0.2s, background 0.2s;
+}
+
+
+.like-btn {
+    background-color: #e3f2fd; /* ฟ้าอ่อน */
+    color: #1976d2;
+}
+.like-btn:hover {
+    background-color: #bbdefb;
+    transform: scale(1.1);
+}
+
+.comment-btn {
+    background-color: #fff3e0; /* ส้มอ่อน */
+    color: #f57c00;
+}
+.comment-btn:hover {
+    background-color: #ffe0b2;
+    transform: scale(1.1);
+}
+
+.action-btn .icon {
+    font-size: 1.2em;
+}
+
+
+.user-rank-row {
+    background-color: #999; /* สีเทาเข้มตามภาพ */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.user-rank-row span {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button {
+    margin-top: 30px;
+    padding: 12px 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.main-button:hover { background-color: #555; }
+
+
+
+#comment-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* ฉากหลังดำจางๆ */
+    display: none; /* ซ่อนเป็นค่าเริ่มต้น */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.comment-box {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    height: 80vh; /* สูง 80% ของจอ */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.comment-header {
+    padding: 15px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    color: #555;
+}
+.close-btn:hover { color: red; }
+
+/* พื้นที่แสดงข้อความแชท */
+#chat-log {
+    flex: 1; /* ขยายเต็มพื้นที่ที่เหลือ */
+    padding: 20px;
+    overflow-y: auto; /* ให้ Scroll ได้ */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* กล่องข้อความ (Bubble) */
+.chat-bubble {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    position: relative;
+    word-wrap: break-word;
+}
+
+/* ข้อความคนอื่น (ชิดซ้าย) */
+.chat-left {
+    align-self: flex-start;
+    background-color: #e5e5ea; /* สีเทาแบบ iOS */
+    color: black;
+    border-bottom-left-radius: 5px;
+}
+
+/* ข้อความเราเอง (ชิดขวา) */
+.chat-right {
+    align-self: flex-end;
+    background-color: #444; /* สีธีม */
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.chat-name {
+    font-size: 0.75em;
+    margin-bottom: 3px;
+    color: #666;
+    font-weight: bold;
+}
+
+/* ส่วนกรอกข้อความด้านล่าง */
+.input-area {
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+#comment-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.send-btn {
+    background: #333;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send-btn:hover { background: #555; }
